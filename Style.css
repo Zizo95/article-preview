@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(210, 46%, 95%);
+}
+section{
+    margin: 150px 250px;
+}
+article{
+   position: relative;
+   left: 310px;
+   bottom: 250px;
+  
+}
+.michelle{
+    border-radius: 50%;
+   width: 70px;
+   margin: 0;
+   padding: 0;
+}
+h1{
+    width: 50%;
+}
+.detail{
+    color: hsl(212, 23%, 69%);
+    width: 50%;
+}
+figure{
+   line-height: 3px;
+   margin: 0;
+}
+.title, .date{
+position: relative;
+ left: 100px;  
+ bottom: 50px;
+ 
+}
+.date{
+    color: hsl(217, 19%, 35%);
+}
+.icon{
+    position: relative;
+    left: 300px;
+    bottom:89px ;
+}
+@media only screen and  (max-width:1122px) {
+   section{
+    margin: 150px 100px;
+   } 
+}
+@media only screen and (max-width: 970px) {
+    section{
+        margin: 150px 10px;
+       } 
+}
+@media only screen and (max-width: 639px) {
+    
+    .title, .date{
+         left: 80px;  
+         bottom: 50px;
+         
+        }
+        .icon{
+            left: 210px;
+            bottom:89px ;
+        }
+}
+@media only screen and (max-width: 520px) {
+    article{
+        left: 10px;
+       bottom: 10px;
+       } 
+}
