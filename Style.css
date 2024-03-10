@@ -43,15 +43,75 @@ position: relative;
 .date{
     color: hsl(217, 19%, 35%);
 }
-.icon{
+
+.share{
     position: relative;
     left: 300px;
-    bottom:89px ;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.share img{
+    width: 20px;
+    height: 15px;
+}
+
+.i-share{
+    display: none;
+   
+}
+
+.i-share.active{
+    display: flex;
+}
+
+.h-share::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 2rem;
+    width: 35px;
+    height: 35px;
+    background: hsl(217, 19%, 35%);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.h-share{
+    display: flex;
+    transition: 0.3s;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    font-size: 12px;
+    width: 13rem;
+    height: 3rem;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    top: 10rem;
+    left: 22rem;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.h-share img{
+    width: 20px;
+    height: 20px;
+}
+
+.share-btn{
+    display: none;
 }
 @media only screen and  (max-width:1122px) {
    section{
-    margin: 150px 100px;
+    margin: 150px 20px;
    } 
+   .share{
+    left: 250px;
+}
+   .h-share{
+    left: 19rem;
+   }
 }
 @media only screen and (max-width: 970px) {
     section{
@@ -71,8 +131,23 @@ position: relative;
         }
 }
 @media only screen and (max-width: 520px) {
+    section{
+        background-color:hsl(210, 46%, 95%); ;
+    }
     article{
         left: 10px;
        bottom: 10px;
+       
        } 
+       .share{
+        left: 220px;
+    }
+       .h-share{
+        left: 15rem;
+       }
+       .attribution {
+        position: relative;
+       top: 140px;
+       right: 90px;
+       }
 }
